@@ -1,0 +1,73 @@
+h1 {
+    color: aliceblue;
+    margin-left: 30%;
+    margin-top: 20%;
+    font-size: 75px;
+}
+
+
+.btn-tow{
+    overflow:hidden;
+    margin-left: 15%;
+
+}
+.btn-three{
+    overflow:hidden;
+    margin-left: 35%;
+}
+.btn{
+    display:block;
+    outline:0;
+    cursor:pointer;
+    border:2px solid #FFF;
+    font-family:sans-serif;
+
+}
+.btn:hover{
+    transform:scale(1.2,1.2)
+}
+.btn-tow{
+    position:relative;
+    width:200px;
+    height:50px;
+    font-family:segoe ui light;
+    font-size:20px;
+    font-weight:700;
+    transition:all .5s ease-in-out;
+    color:#FFF
+}
+.btn-tow{
+    z-index:2;
+    background-color:green;
+    border:2px solid #FFF}
+.btn-tow:after,.btn-tow:before{
+    background-color:#f1c40f;
+    height:300px;
+    border-radius:50%;
+    content:"";
+    display:inline-block;
+    position:absolute;
+    width:200px;
+    z-index:-2
+}
+.btn-tow:after{
+    top:60px;transition:all 3s ease-in-out}
+.btn-tow:before{
+    top:-60px;
+    left:-200px
+}
+.btn-tow:hover:after{
+    transform:translate(0,-140px) rotate(720deg)
+}
+.btn-tow:hover:before{
+    transform:translate(173px,0) rotate(720deg)
+}
+.btn-tow:hover{
+    transform:scale(1.2,1.2)
+}
+
+
+.btn-tow:after,.btn-tow:before{
+    transition:all 3s ease-in-out
+}
+
